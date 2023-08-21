@@ -2,7 +2,7 @@
 
 int _printf(const char *format, ...)
 {
-	int print_chars = 0;
+	int print_chars = 0;/* prints the number of characters */
 	va_list args_of_list;
 
 	if (format == NULL)
@@ -19,7 +19,7 @@ int _printf(const char *format, ...)
 	else
 	{
 		format++;
-		if (*format == '\0')
+		if (*format == '\0')/* checks for the end of a string */
 			break;
 		if (*format == '%')
 		{
