@@ -49,12 +49,3 @@ int _printf(const char *format, ...)
 	va_end(args_of_list);
 	return (print_chars);
 }
-
-int main(void)
-{
-	_printf("Today is\n");
-	_printf("%c\n", 'a');
-	_printf("%s\n", "Monday evening");
-	_printf("%%\n");
-	return (0);
-}
