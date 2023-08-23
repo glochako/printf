@@ -40,7 +40,18 @@ int _printf(const char *format, ...)
                     count++;
                 }
                 else
+            {
+            char numStr[20];
+            int len = 0;
+            
+            while (num > 0) {
+            
+                numStr[len++] = '0' + num % 10;
+                num /= 10;
 
+            
+            }
+            
         
 
 
